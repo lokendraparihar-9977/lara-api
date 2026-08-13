@@ -9,6 +9,7 @@ from dotenv import load_dotenv
 import io
 import os
 from datetime import datetime
+import razorpay
 
 # ── Load environment variables ─────────────────────────
 load_dotenv()
@@ -19,11 +20,18 @@ OWNER_KEY    = os.getenv("OWNER_API_KEY")
 # ── Connect to Supabase ────────────────────────────────
 supabase = create_client(SUPABASE_URL, SUPABASE_KEY)
 
+# ── Razorpay client ────────────────────────────────────
+RAZORPAY_KEY_ID = os.getenv("RAZORPAY_KEY_ID")
+RAZORPAY_KEY_SECRET = os.getenv("RAZORPAY_KEY_SECRET")
+razorpay_client = razorpay.Client(auth=(RAZORPAY_KEY_ID, RAZORPAY_KEY_SECRET))
+
 # ── Tier limits ────────────────────────────────────────
 TIER_LIMITS = {
-    "free":  100,
-    "pro":   10000,
-    "owner": 999999999,
+    "free":     100,
+    "startup":  500,
+    "pro":      2000,
+    "business": 10000,
+    "owner":    999999999,
 }
 
 # ── LARA app ───────────────────────────────────────────
@@ -110,6 +118,85 @@ def register(name: str, email: str):
         "api_key": api_key,
         "tier": "free",
         "calls_limit": TIER_LIMITS["free"]
+    }
+
+# ── Create payment order ───────────────────────────────
+@app.post("/subscribe")
+def subscribe(plan: str, x_api_key: str = Header(...)):
+    user = get_user(x_api_key)
+    if not user:
+        raise HTTPException(status_code=401, detail="Invalid API key")
+
+    # Plan prices in paise (INR) — USD equivalent shown in comments
+    plan_prices = {
+        "startup":  24900,   # $2.99/month — 500 calls
+        "pro":      49900,   # $5.99/month — 2000 calls
+        "business": 164900,  # $19.99/month — 10000 calls
+    }
+
+    if plan not in plan_prices:
+        raise HTTPException(status_code=400, detail="Invalid plan. Choose 'startup', 'pro', or 'business'")
+
+    amount = plan_prices[plan]
+
+    order = razorpay_client.order.create({
+        "amount": amount,
+        "currency": "INR",
+        "receipt": f"lara_{user['api_key'][:10]}_{plan}",
+        "notes": {
+            "api_key": user["api_key"],
+            "plan": plan,
+            "name": user["name"]
+        }
+    })
+
+    return {
+        "order_id": order["id"],
+        "amount": amount,
+        "currency": "INR",
+        "plan": plan,
+        "key_id": RAZORPAY_KEY_ID,
+        "name": user["name"]
+    }
+
+# ── Verify payment ─────────────────────────────────────
+@app.post("/payment/verify")
+def verify_payment(
+    razorpay_order_id: str,
+    razorpay_payment_id: str,
+    razorpay_signature: str,
+    x_api_key: str = Header(...)
+):
+    user = get_user(x_api_key)
+    if not user:
+        raise HTTPException(status_code=401, detail="Invalid API key")
+
+    # Verify signature
+    try:
+        razorpay_client.utility.verify_payment_signature({
+            "razorpay_order_id": razorpay_order_id,
+            "razorpay_payment_id": razorpay_payment_id,
+            "razorpay_signature": razorpay_signature
+        })
+    except Exception:
+        raise HTTPException(status_code=400, detail="Invalid payment signature")
+
+    # Upgrade user to pro
+    supabase.table("users").update({"tier": "pro"}).eq("api_key", x_api_key).execute()
+
+    # Log billing
+    supabase.table("billing").upsert({
+        "api_key": x_api_key,
+        "plan": "pro",
+        "status": "active",
+        "stripe_customer_id": razorpay_payment_id
+    }).execute()
+
+    return {
+        "status": "success",
+        "message": "Payment verified. Your account has been upgraded to Pro.",
+        "tier": "pro",
+        "calls_limit": 10000
     }
 
 # ── Detection endpoint ─────────────────────────────────
