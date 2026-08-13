@@ -8,4 +8,4 @@ python-dotenv==1.0.0
 onnx==1.22.0
 onnxruntime==1.23.2
 numpy==2.2.6
-opencv-python==5.0.0.93
+opencv-python-headless==4.10.0.84
