@@ -1,0 +1,6 @@
+.env
+yolov8n.pt
+__pycache__/
+*.pyc
+usage_log.json
+.ipynb_checkpoints/

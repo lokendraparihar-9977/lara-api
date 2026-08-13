@@ -1,0 +1,11 @@
+fastapi==0.141.1
+uvicorn==0.52.1
+python-multipart==0.0.32
+pillow==12.2.0
+ultralytics==8.4.118
+supabase==2.31.0
+python-dotenv==1.0.0
+onnx==1.22.0
+onnxruntime==1.23.2
+numpy==2.2.6
+opencv-python==5.0.0.93
