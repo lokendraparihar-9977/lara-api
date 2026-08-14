@@ -38,7 +38,7 @@ TIER_LIMITS = {
     "free":     100,
     "startup":  500,
     "pro":      2000,
-    "business": 10000,
+    "business": 7000,
     "owner":    999999999,
 }
 
@@ -137,9 +137,9 @@ def subscribe(plan: PlanType, x_api_key: str = Header(...)):
 
     # Plan prices in paise (INR) — USD equivalent shown in comments
     plan_prices = {
-        "startup":  24900,   # $2.99/month — 500 calls
-        "pro":      49900,   # $5.99/month — 2000 calls
-        "business": 164900,  # $19.99/month — 10000 calls
+        "startup":  249.00,   # $2.99/month — 500 calls
+        "pro":      499.00,   # $5.99/month — 2000 calls
+        "business": 1649.00,  # $19.99/month — 10000 calls
     }
 
     if plan not in plan_prices:
