@@ -10,6 +10,14 @@ import io
 import os
 from datetime import datetime
 import razorpay
+from enum import Enum
+
+class PlanType(str, Enum):
+    startup = "startup"
+    pro = "pro"
+    business = "business"
+
+# def subscribe(plan: PlanType, x_api_key: str = Header(...)):
 
 # ── Load environment variables ─────────────────────────
 load_dotenv()
