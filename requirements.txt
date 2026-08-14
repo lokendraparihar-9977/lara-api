@@ -8,3 +8,4 @@ python-dotenv==1.0.0
 onnx==1.22.0
 onnxruntime==1.23.2
 numpy==2.2.6
+razorpay==1.4.2
