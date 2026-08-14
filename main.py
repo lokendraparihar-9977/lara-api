@@ -130,7 +130,7 @@ def register(name: str, email: str):
 
 # ── Create payment order ───────────────────────────────
 @app.post("/subscribe")
-def subscribe(plan: str, x_api_key: str = Header(...)):
+def subscribe(plan: PlanType, x_api_key: str = Header(...)):
     user = get_user(x_api_key)
     if not user:
         raise HTTPException(status_code=401, detail="Invalid API key")
