@@ -248,15 +248,38 @@ async def detect(
 
     # Step 5 — Parse detections
     detections = []
+    seen_boxes = []
+
     for box in results[0].boxes:
         label = model.names[int(box.cls)]
         confidence = round(float(box.conf), 3)
         x1, y1, x2, y2 = [round(float(v)) for v in box.xyxy[0]]
-        detections.append({
-            "label": label,
-            "confidence": confidence,
-            "box": [x1, y1, x2, y2]
-        })
+
+        # NMS — skip if too similar to an already accepted box
+        duplicate = False
+        for seen in seen_boxes:
+            # Calculate overlap
+            sx1, sy1, sx2, sy2 = seen
+            inter_x1 = max(x1, sx1)
+            inter_y1 = max(y1, sy1)
+            inter_x2 = min(x2, sx2)
+            inter_y2 = min(y2, sy2)
+            inter_area = max(0, inter_x2-inter_x1) * max(0, inter_y2-inter_y1)
+            box_area = (x2-x1) * (y2-y1)
+            seen_area = (sx2-sx1) * (sy2-sy1)
+            union_area = box_area + seen_area - inter_area
+            iou = inter_area / union_area if union_area > 0 else 0
+            if iou > 0.5:
+                duplicate = True
+                break
+
+        if not duplicate and confidence >= 0.3:
+            detections.append({
+                "label": label,
+                "confidence": confidence,
+                "box": [x1, y1, x2, y2]
+            })
+        seen_boxes.append((x1, y1, x2, y2))
 
     # Step 6 — Log to Supabase
     log_usage(x_api_key, "/detect")
