@@ -12,6 +12,8 @@ from datetime import datetime
 import razorpay
 from enum import Enum
 
+from fastapi.middleware.cors import CORSMiddleware
+
 class PlanType(str, Enum):
     startup = "startup"
     pro = "pro"
@@ -47,6 +49,15 @@ app = FastAPI(
     title="LARA API",
     description="Lightweight Adaptive Recognition API — AI vision for every machine",
     version="0.4.0"
+)
+
+# ── CORS ───────────────────────────────────────────────
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 # ── Load model ─────────────────────────────────────────
