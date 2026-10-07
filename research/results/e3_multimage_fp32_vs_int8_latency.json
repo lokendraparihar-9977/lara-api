@@ -1,0 +1,4058 @@
+{
+  "experiment": "E3b",
+  "description": "Multi-image controlled FP32 vs INT8 OpenVINO CPU inference latency benchmark",
+  "configuration": {
+    "image_count": 500,
+    "input_size": [
+      1,
+      3,
+      640,
+      640
+    ],
+    "batch_size": 1,
+    "device": "CPU",
+    "performance_hint": "LATENCY",
+    "warmup_iterations": 10
+  },
+  "fp32": {
+    "model": "yolov8n_openvino_model\\yolov8n.xml",
+    "summary": {
+      "mean_ms": 68.57922960002907,
+      "median_ms": 61.822199961170554,
+      "std_ms": 15.970389870834076,
+      "min_ms": 53.80420002620667,
+      "max_ms": 181.0904999729246,
+      "p90_ms": 86.68022995116189,
+      "p95_ms": 100.78881004010327,
+      "p99_ms": 138.7100490136072,
+      "fps": 14.581674449133446,
+      "samples": 500
+    },
+    "per_image": [
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000000139.jpg",
+        "latency_ms": 67.40219995845109
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000000285.jpg",
+        "latency_ms": 81.2519999453798
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000000632.jpg",
+        "latency_ms": 79.92099993862212
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000000724.jpg",
+        "latency_ms": 80.13769995886832
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000000776.jpg",
+        "latency_ms": 102.65900008380413
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000000785.jpg",
+        "latency_ms": 96.38149989768863
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000000802.jpg",
+        "latency_ms": 89.5222999388352
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000000872.jpg",
+        "latency_ms": 100.80990009009838
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000000885.jpg",
+        "latency_ms": 113.45329997129738
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000001000.jpg",
+        "latency_ms": 81.62589999847114
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000001268.jpg",
+        "latency_ms": 71.694599930197
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000001296.jpg",
+        "latency_ms": 93.66329992190003
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000001353.jpg",
+        "latency_ms": 108.83560008369386
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000001425.jpg",
+        "latency_ms": 74.54880001023412
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000001490.jpg",
+        "latency_ms": 83.4426999790594
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000001503.jpg",
+        "latency_ms": 98.03470002952963
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000001532.jpg",
+        "latency_ms": 71.99710002169013
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000001584.jpg",
+        "latency_ms": 74.25019994843751
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000001675.jpg",
+        "latency_ms": 68.7865000218153
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000001761.jpg",
+        "latency_ms": 74.11829999182373
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000001818.jpg",
+        "latency_ms": 101.94189997855574
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000001993.jpg",
+        "latency_ms": 82.03199994750321
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000002006.jpg",
+        "latency_ms": 76.7467999830842
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000002149.jpg",
+        "latency_ms": 68.85170005261898
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000002153.jpg",
+        "latency_ms": 82.62339991051704
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000002157.jpg",
+        "latency_ms": 80.60649991966784
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000002261.jpg",
+        "latency_ms": 78.67349998559803
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000002299.jpg",
+        "latency_ms": 68.25229991227388
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000002431.jpg",
+        "latency_ms": 64.70630003605038
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000002473.jpg",
+        "latency_ms": 75.5318000447005
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000002532.jpg",
+        "latency_ms": 64.86869999207556
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000002587.jpg",
+        "latency_ms": 66.99189997743815
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000002592.jpg",
+        "latency_ms": 67.67409993335605
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000002685.jpg",
+        "latency_ms": 66.1471999483183
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000002923.jpg",
+        "latency_ms": 79.25960002467036
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000003156.jpg",
+        "latency_ms": 69.01039998047054
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000003255.jpg",
+        "latency_ms": 73.40430002659559
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000003501.jpg",
+        "latency_ms": 66.44949992187321
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000003553.jpg",
+        "latency_ms": 111.73410003539175
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000003661.jpg",
+        "latency_ms": 158.76180003397167
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000003845.jpg",
+        "latency_ms": 123.08429996483028
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000003934.jpg",
+        "latency_ms": 72.83720001578331
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000004134.jpg",
+        "latency_ms": 64.53179998788983
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000004395.jpg",
+        "latency_ms": 58.46830003429204
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000004495.jpg",
+        "latency_ms": 80.9554000152275
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000004765.jpg",
+        "latency_ms": 67.0464999275282
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000004795.jpg",
+        "latency_ms": 138.442000024952
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000005001.jpg",
+        "latency_ms": 116.89120007213205
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000005037.jpg",
+        "latency_ms": 83.49810005165637
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000005060.jpg",
+        "latency_ms": 74.94640001095831
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000005193.jpg",
+        "latency_ms": 83.50750000681728
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000005477.jpg",
+        "latency_ms": 86.26039989758283
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000005503.jpg",
+        "latency_ms": 75.2333999844268
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000005529.jpg",
+        "latency_ms": 70.32319996505976
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000005586.jpg",
+        "latency_ms": 68.67930002044886
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000005600.jpg",
+        "latency_ms": 84.60519998334348
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000005992.jpg",
+        "latency_ms": 74.36089997645468
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000006012.jpg",
+        "latency_ms": 66.33249996230006
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000006040.jpg",
+        "latency_ms": 62.51750001683831
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000006213.jpg",
+        "latency_ms": 85.57659992948174
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000006460.jpg",
+        "latency_ms": 86.94309997372329
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000006471.jpg",
+        "latency_ms": 69.69949998892844
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000006614.jpg",
+        "latency_ms": 73.02930008154362
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000006723.jpg",
+        "latency_ms": 72.7696999674663
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000006763.jpg",
+        "latency_ms": 70.47010003589094
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000006771.jpg",
+        "latency_ms": 78.19360005669296
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000006818.jpg",
+        "latency_ms": 63.425199943594635
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000006894.jpg",
+        "latency_ms": 81.72639994882047
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000006954.jpg",
+        "latency_ms": 65.2320000808686
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000007088.jpg",
+        "latency_ms": 97.37329999916255
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000007108.jpg",
+        "latency_ms": 79.10249999258667
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000007278.jpg",
+        "latency_ms": 103.4820000641048
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000007281.jpg",
+        "latency_ms": 87.56620006170124
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000007386.jpg",
+        "latency_ms": 72.38379993941635
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000007511.jpg",
+        "latency_ms": 87.76220004074275
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000007574.jpg",
+        "latency_ms": 106.74620000645518
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000007784.jpg",
+        "latency_ms": 79.04830004554242
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000007795.jpg",
+        "latency_ms": 81.68559998739511
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000007816.jpg",
+        "latency_ms": 68.9663999946788
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000007818.jpg",
+        "latency_ms": 71.59730000421405
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000007888.jpg",
+        "latency_ms": 78.80179991479963
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000007977.jpg",
+        "latency_ms": 86.67859993875027
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000007991.jpg",
+        "latency_ms": 68.90810001641512
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000008021.jpg",
+        "latency_ms": 58.92390001099557
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000008211.jpg",
+        "latency_ms": 139.6553999511525
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000008277.jpg",
+        "latency_ms": 73.12930002808571
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000008532.jpg",
+        "latency_ms": 67.55459995474666
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000008629.jpg",
+        "latency_ms": 67.91660003364086
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000008690.jpg",
+        "latency_ms": 78.13279994297773
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000008762.jpg",
+        "latency_ms": 70.27459994424134
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000008844.jpg",
+        "latency_ms": 81.60710008814931
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000008899.jpg",
+        "latency_ms": 81.52440004050732
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000009378.jpg",
+        "latency_ms": 74.51870001386851
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000009400.jpg",
+        "latency_ms": 64.70979994628578
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000009448.jpg",
+        "latency_ms": 88.5932999663055
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000009483.jpg",
+        "latency_ms": 67.89439998101443
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000009590.jpg",
+        "latency_ms": 61.22419994790107
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000009769.jpg",
+        "latency_ms": 89.8835000116378
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000009772.jpg",
+        "latency_ms": 102.50219993758947
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000009891.jpg",
+        "latency_ms": 64.9204000364989
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000009914.jpg",
+        "latency_ms": 87.54860004410148
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000010092.jpg",
+        "latency_ms": 60.810400056652725
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000010363.jpg",
+        "latency_ms": 60.60470000375062
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000010583.jpg",
+        "latency_ms": 75.2884999383241
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000010707.jpg",
+        "latency_ms": 77.03359995502979
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000010764.jpg",
+        "latency_ms": 59.85339998733252
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000010977.jpg",
+        "latency_ms": 61.51790008880198
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000010995.jpg",
+        "latency_ms": 59.35790005605668
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000011051.jpg",
+        "latency_ms": 58.12810000497848
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000011122.jpg",
+        "latency_ms": 56.549500091932714
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000011149.jpg",
+        "latency_ms": 57.977300020866096
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000011197.jpg",
+        "latency_ms": 57.97179997898638
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000011511.jpg",
+        "latency_ms": 58.943299925886095
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000011615.jpg",
+        "latency_ms": 59.75020001642406
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000011699.jpg",
+        "latency_ms": 62.24660004954785
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000011760.jpg",
+        "latency_ms": 59.55820006784052
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000011813.jpg",
+        "latency_ms": 70.43520000297576
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000012062.jpg",
+        "latency_ms": 59.84589993022382
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000012120.jpg",
+        "latency_ms": 59.5604000845924
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000012280.jpg",
+        "latency_ms": 64.44280000869185
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000012576.jpg",
+        "latency_ms": 59.45810000412166
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000012639.jpg",
+        "latency_ms": 60.00230007339269
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000012667.jpg",
+        "latency_ms": 60.69670000579208
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000012670.jpg",
+        "latency_ms": 61.00860005244613
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000012748.jpg",
+        "latency_ms": 64.07209997996688
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000013004.jpg",
+        "latency_ms": 58.843899983912706
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000013177.jpg",
+        "latency_ms": 57.54969990812242
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000013201.jpg",
+        "latency_ms": 57.89789999835193
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000013291.jpg",
+        "latency_ms": 57.732800021767616
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000013348.jpg",
+        "latency_ms": 57.8870999161154
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000013546.jpg",
+        "latency_ms": 58.605299913324416
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000013597.jpg",
+        "latency_ms": 59.602599940262735
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000013659.jpg",
+        "latency_ms": 57.98429995775223
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000013729.jpg",
+        "latency_ms": 59.734800015576184
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000013774.jpg",
+        "latency_ms": 57.544699986465275
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000013923.jpg",
+        "latency_ms": 57.74139997083694
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000014007.jpg",
+        "latency_ms": 60.33230002503842
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000014038.jpg",
+        "latency_ms": 58.143300004303455
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000014226.jpg",
+        "latency_ms": 60.067999991588295
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000014380.jpg",
+        "latency_ms": 58.05690004490316
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000014439.jpg",
+        "latency_ms": 73.2791000045836
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000014473.jpg",
+        "latency_ms": 90.65599995665252
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000014831.jpg",
+        "latency_ms": 63.95169999450445
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000014888.jpg",
+        "latency_ms": 64.6337999496609
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000015079.jpg",
+        "latency_ms": 58.30320005770773
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000015254.jpg",
+        "latency_ms": 59.05819998588413
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000015272.jpg",
+        "latency_ms": 60.26100006420165
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000015278.jpg",
+        "latency_ms": 90.43770004063845
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000015335.jpg",
+        "latency_ms": 63.17370000761002
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000015338.jpg",
+        "latency_ms": 58.27290005981922
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000015440.jpg",
+        "latency_ms": 66.64069998078048
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000015497.jpg",
+        "latency_ms": 60.166000039316714
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000015517.jpg",
+        "latency_ms": 59.04379999265075
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000015597.jpg",
+        "latency_ms": 60.7636000495404
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000015660.jpg",
+        "latency_ms": 58.78530000336468
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000015746.jpg",
+        "latency_ms": 63.06590000167489
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000015751.jpg",
+        "latency_ms": 78.18000006955117
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000015956.jpg",
+        "latency_ms": 109.7711999900639
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000016010.jpg",
+        "latency_ms": 80.15099994372576
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000016228.jpg",
+        "latency_ms": 61.36330007575452
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000016249.jpg",
+        "latency_ms": 66.41890003811568
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000016439.jpg",
+        "latency_ms": 61.58610002603382
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000016451.jpg",
+        "latency_ms": 60.27030001860112
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000016502.jpg",
+        "latency_ms": 62.61120003182441
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000016598.jpg",
+        "latency_ms": 61.85089994687587
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000016958.jpg",
+        "latency_ms": 58.29220009036362
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000017029.jpg",
+        "latency_ms": 58.864800026640296
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000017031.jpg",
+        "latency_ms": 58.84770001284778
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000017115.jpg",
+        "latency_ms": 59.02559997048229
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000017178.jpg",
+        "latency_ms": 58.057299931533635
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000017182.jpg",
+        "latency_ms": 57.5480000115931
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000017207.jpg",
+        "latency_ms": 63.72410000767559
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000017379.jpg",
+        "latency_ms": 105.39420007262379
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000017436.jpg",
+        "latency_ms": 166.90970002673566
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000017627.jpg",
+        "latency_ms": 73.28210002742708
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000017714.jpg",
+        "latency_ms": 81.08439994975924
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000017899.jpg",
+        "latency_ms": 106.7283001029864
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000017905.jpg",
+        "latency_ms": 66.81190000381321
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000017959.jpg",
+        "latency_ms": 75.41150005999953
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000018150.jpg",
+        "latency_ms": 65.95339998602867
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000018193.jpg",
+        "latency_ms": 60.00340008176863
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000018380.jpg",
+        "latency_ms": 64.55230002757162
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000018491.jpg",
+        "latency_ms": 57.690200046636164
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000018519.jpg",
+        "latency_ms": 58.56289993971586
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000018575.jpg",
+        "latency_ms": 57.9620999051258
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000018737.jpg",
+        "latency_ms": 65.83700003102422
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000018770.jpg",
+        "latency_ms": 59.097700053825974
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000018833.jpg",
+        "latency_ms": 58.37550002615899
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000018837.jpg",
+        "latency_ms": 57.99860006663948
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000019042.jpg",
+        "latency_ms": 58.552099973894656
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000019109.jpg",
+        "latency_ms": 58.451500022783875
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000019221.jpg",
+        "latency_ms": 60.099099995568395
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000019402.jpg",
+        "latency_ms": 58.9806999778375
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000019432.jpg",
+        "latency_ms": 62.23579996731132
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000019742.jpg",
+        "latency_ms": 61.472700093872845
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000019786.jpg",
+        "latency_ms": 59.233700041659176
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000019924.jpg",
+        "latency_ms": 58.5097000002861
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000020059.jpg",
+        "latency_ms": 59.078199905343354
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000020107.jpg",
+        "latency_ms": 59.32739994022995
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000020247.jpg",
+        "latency_ms": 58.87259996961802
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000020333.jpg",
+        "latency_ms": 73.74569994863123
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000020553.jpg",
+        "latency_ms": 58.23409999720752
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000020571.jpg",
+        "latency_ms": 57.48429999221116
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000020992.jpg",
+        "latency_ms": 65.50269993022084
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000021167.jpg",
+        "latency_ms": 59.15029998868704
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000021465.jpg",
+        "latency_ms": 58.07439994532615
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000021503.jpg",
+        "latency_ms": 84.59310000762343
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000021604.jpg",
+        "latency_ms": 65.48460002522916
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000021839.jpg",
+        "latency_ms": 60.026600025594234
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000021879.jpg",
+        "latency_ms": 60.45350001659244
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000021903.jpg",
+        "latency_ms": 58.82729997392744
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000022192.jpg",
+        "latency_ms": 60.19059999380261
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000022371.jpg",
+        "latency_ms": 60.21420005708933
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000022396.jpg",
+        "latency_ms": 61.688799993135035
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000022479.jpg",
+        "latency_ms": 60.71460002567619
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000022589.jpg",
+        "latency_ms": 59.12760004866868
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000022623.jpg",
+        "latency_ms": 61.13349995575845
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000022705.jpg",
+        "latency_ms": 62.118600006215274
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000022755.jpg",
+        "latency_ms": 59.37110004015267
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000022892.jpg",
+        "latency_ms": 58.860599994659424
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000022935.jpg",
+        "latency_ms": 63.61279997508973
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000022969.jpg",
+        "latency_ms": 59.34119992889464
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000023023.jpg",
+        "latency_ms": 60.06259995047003
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000023034.jpg",
+        "latency_ms": 58.788999915122986
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000023126.jpg",
+        "latency_ms": 59.277000022120774
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000023230.jpg",
+        "latency_ms": 64.5906999707222
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000023272.jpg",
+        "latency_ms": 58.62839997280389
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000023359.jpg",
+        "latency_ms": 58.49029996898025
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000023666.jpg",
+        "latency_ms": 60.001199948601425
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000023751.jpg",
+        "latency_ms": 59.894900070503354
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000023781.jpg",
+        "latency_ms": 181.0904999729246
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000023899.jpg",
+        "latency_ms": 67.27690005209297
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000023937.jpg",
+        "latency_ms": 66.91040005534887
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000024021.jpg",
+        "latency_ms": 59.0548999607563
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000024027.jpg",
+        "latency_ms": 60.428200056776404
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000024144.jpg",
+        "latency_ms": 60.90480007696897
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000024243.jpg",
+        "latency_ms": 63.2708000484854
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000024567.jpg",
+        "latency_ms": 61.07960001099855
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000024610.jpg",
+        "latency_ms": 59.44330000784248
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000024919.jpg",
+        "latency_ms": 58.59849997796118
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000025057.jpg",
+        "latency_ms": 82.60680001694709
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000025096.jpg",
+        "latency_ms": 62.376399990171194
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000025139.jpg",
+        "latency_ms": 62.77509999927133
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000025181.jpg",
+        "latency_ms": 58.76929999794811
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000025228.jpg",
+        "latency_ms": 62.51620000693947
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000025386.jpg",
+        "latency_ms": 60.53409993182868
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000025393.jpg",
+        "latency_ms": 59.5419000601396
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000025394.jpg",
+        "latency_ms": 65.94880006741732
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000025424.jpg",
+        "latency_ms": 63.98259999696165
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000025560.jpg",
+        "latency_ms": 58.777500060386956
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000025593.jpg",
+        "latency_ms": 68.39889998082072
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000025603.jpg",
+        "latency_ms": 59.99660002999008
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000025986.jpg",
+        "latency_ms": 65.3533999575302
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000026204.jpg",
+        "latency_ms": 62.194099999032915
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000026465.jpg",
+        "latency_ms": 61.27880001440644
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000026564.jpg",
+        "latency_ms": 59.977500000968575
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000026690.jpg",
+        "latency_ms": 61.4134999923408
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000026926.jpg",
+        "latency_ms": 59.91259997244924
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000026941.jpg",
+        "latency_ms": 60.0590999238193
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000027186.jpg",
+        "latency_ms": 60.574600007385015
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000027620.jpg",
+        "latency_ms": 60.16940006520599
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000027696.jpg",
+        "latency_ms": 61.16230005864054
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000027768.jpg",
+        "latency_ms": 59.097600053064525
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000027932.jpg",
+        "latency_ms": 81.01419999729842
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000027972.jpg",
+        "latency_ms": 81.03639993350953
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000027982.jpg",
+        "latency_ms": 81.98619994800538
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000028285.jpg",
+        "latency_ms": 86.69490006286651
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000028449.jpg",
+        "latency_ms": 95.00759991351515
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000028452.jpg",
+        "latency_ms": 79.43420007359236
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000028809.jpg",
+        "latency_ms": 62.9047000547871
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000028993.jpg",
+        "latency_ms": 61.30300008226186
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000029187.jpg",
+        "latency_ms": 58.806999935768545
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000029393.jpg",
+        "latency_ms": 59.16390009224415
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000029397.jpg",
+        "latency_ms": 74.91620001383126
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000029596.jpg",
+        "latency_ms": 70.38319995626807
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000029640.jpg",
+        "latency_ms": 63.29939991701394
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000029675.jpg",
+        "latency_ms": 65.97769993823022
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000029984.jpg",
+        "latency_ms": 59.97520009987056
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000030213.jpg",
+        "latency_ms": 59.577299980446696
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000030494.jpg",
+        "latency_ms": 58.94120002631098
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000030504.jpg",
+        "latency_ms": 58.46990004647523
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000030675.jpg",
+        "latency_ms": 58.19010001141578
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000030785.jpg",
+        "latency_ms": 60.89680001605302
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000030828.jpg",
+        "latency_ms": 61.72640004660934
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000031050.jpg",
+        "latency_ms": 61.5502999862656
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000031093.jpg",
+        "latency_ms": 59.93200000375509
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000031118.jpg",
+        "latency_ms": 58.94890008494258
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000031217.jpg",
+        "latency_ms": 59.4907000195235
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000031248.jpg",
+        "latency_ms": 58.9890000410378
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000031269.jpg",
+        "latency_ms": 60.615899972617626
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000031296.jpg",
+        "latency_ms": 60.07399992085993
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000031322.jpg",
+        "latency_ms": 65.27529994491488
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000031620.jpg",
+        "latency_ms": 60.04020001273602
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000031735.jpg",
+        "latency_ms": 74.22930002212524
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000031749.jpg",
+        "latency_ms": 58.405600022524595
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000031817.jpg",
+        "latency_ms": 57.97470000106841
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000032038.jpg",
+        "latency_ms": 58.05420002434403
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000032081.jpg",
+        "latency_ms": 59.16539998725057
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000032285.jpg",
+        "latency_ms": 60.93489995691925
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000032334.jpg",
+        "latency_ms": 59.23859996255487
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000032570.jpg",
+        "latency_ms": 67.18489993363619
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000032610.jpg",
+        "latency_ms": 58.69380000513047
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000032735.jpg",
+        "latency_ms": 59.89669996779412
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000032811.jpg",
+        "latency_ms": 60.14860002323985
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000032817.jpg",
+        "latency_ms": 59.4095999840647
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000032861.jpg",
+        "latency_ms": 59.76840003859252
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000032887.jpg",
+        "latency_ms": 59.46230003610253
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000032901.jpg",
+        "latency_ms": 60.894800000824034
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000032941.jpg",
+        "latency_ms": 59.02869999408722
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000033005.jpg",
+        "latency_ms": 95.40839993860573
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000033104.jpg",
+        "latency_ms": 68.25309991836548
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000033109.jpg",
+        "latency_ms": 60.98409998230636
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000033114.jpg",
+        "latency_ms": 61.66399992071092
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000033221.jpg",
+        "latency_ms": 58.487400063313544
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000033368.jpg",
+        "latency_ms": 70.85560006089509
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000033638.jpg",
+        "latency_ms": 60.40009995922446
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000033707.jpg",
+        "latency_ms": 59.56650001462549
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000033759.jpg",
+        "latency_ms": 61.436799936927855
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000033854.jpg",
+        "latency_ms": 59.55010000616312
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000034071.jpg",
+        "latency_ms": 60.88040000759065
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000034139.jpg",
+        "latency_ms": 59.66250004712492
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000034205.jpg",
+        "latency_ms": 59.45659999269992
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000034257.jpg",
+        "latency_ms": 60.057700029574335
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000034417.jpg",
+        "latency_ms": 60.18859997857362
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000034452.jpg",
+        "latency_ms": 59.04159997589886
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000034760.jpg",
+        "latency_ms": 62.67830007709563
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000034873.jpg",
+        "latency_ms": 62.11009994149208
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000035062.jpg",
+        "latency_ms": 59.63490006979555
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000035197.jpg",
+        "latency_ms": 59.20179991517216
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000035279.jpg",
+        "latency_ms": 68.11699992977083
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000035326.jpg",
+        "latency_ms": 58.44520009122789
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000035682.jpg",
+        "latency_ms": 59.052999946288764
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000035770.jpg",
+        "latency_ms": 63.89170000329614
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000035963.jpg",
+        "latency_ms": 64.80729999020696
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000036494.jpg",
+        "latency_ms": 60.44389994349331
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000036539.jpg",
+        "latency_ms": 64.76049998309463
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000036660.jpg",
+        "latency_ms": 124.07819996587932
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000036678.jpg",
+        "latency_ms": 57.80049995519221
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000036844.jpg",
+        "latency_ms": 58.675500098615885
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000036861.jpg",
+        "latency_ms": 59.736200026236475
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000036936.jpg",
+        "latency_ms": 64.45820000953972
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000037670.jpg",
+        "latency_ms": 109.4491999829188
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000037689.jpg",
+        "latency_ms": 85.17719991505146
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000037740.jpg",
+        "latency_ms": 79.79540002997965
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000037751.jpg",
+        "latency_ms": 66.70999992638826
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000037777.jpg",
+        "latency_ms": 62.39670002833009
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000037988.jpg",
+        "latency_ms": 60.490300063975155
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000038048.jpg",
+        "latency_ms": 59.53480000607669
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000038070.jpg",
+        "latency_ms": 60.13809994328767
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000038118.jpg",
+        "latency_ms": 63.392800046131015
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000038210.jpg",
+        "latency_ms": 66.44899991806597
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000038576.jpg",
+        "latency_ms": 59.01099997572601
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000038678.jpg",
+        "latency_ms": 60.00940001104027
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000038825.jpg",
+        "latency_ms": 59.727500076405704
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000038829.jpg",
+        "latency_ms": 59.75040001794696
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000039405.jpg",
+        "latency_ms": 73.73070006724447
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000039477.jpg",
+        "latency_ms": 143.72950000688434
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000039480.jpg",
+        "latency_ms": 62.18030001036823
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000039484.jpg",
+        "latency_ms": 59.88309998065233
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000039551.jpg",
+        "latency_ms": 58.676699991337955
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000039670.jpg",
+        "latency_ms": 58.207200025208294
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000039769.jpg",
+        "latency_ms": 59.436499956063926
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000039785.jpg",
+        "latency_ms": 60.86319999303669
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000039914.jpg",
+        "latency_ms": 59.19499997980893
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000039951.jpg",
+        "latency_ms": 60.27600006200373
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000039956.jpg",
+        "latency_ms": 58.75590001232922
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000040036.jpg",
+        "latency_ms": 60.03019993659109
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000040083.jpg",
+        "latency_ms": 138.70050001423806
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000040471.jpg",
+        "latency_ms": 58.245800086297095
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000040757.jpg",
+        "latency_ms": 86.77609998267144
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000041488.jpg",
+        "latency_ms": 57.35999997705221
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000041633.jpg",
+        "latency_ms": 59.96990005951375
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000041635.jpg",
+        "latency_ms": 58.537499979138374
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000041872.jpg",
+        "latency_ms": 59.1014000819996
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000041888.jpg",
+        "latency_ms": 59.63280005380511
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000041990.jpg",
+        "latency_ms": 58.44900000374764
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000042070.jpg",
+        "latency_ms": 80.07589995395392
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000042102.jpg",
+        "latency_ms": 62.17229994945228
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000042178.jpg",
+        "latency_ms": 60.423400020226836
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000042276.jpg",
+        "latency_ms": 62.822300009429455
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000042296.jpg",
+        "latency_ms": 57.98870010767132
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000042528.jpg",
+        "latency_ms": 57.68430000171065
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000042563.jpg",
+        "latency_ms": 60.767099959775805
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000042628.jpg",
+        "latency_ms": 57.76160000823438
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000042888.jpg",
+        "latency_ms": 59.374600066803396
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000042889.jpg",
+        "latency_ms": 88.9846000354737
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000043314.jpg",
+        "latency_ms": 57.45319998823106
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000043435.jpg",
+        "latency_ms": 59.85539988614619
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000043581.jpg",
+        "latency_ms": 57.926799985580146
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000043737.jpg",
+        "latency_ms": 58.83360002189875
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000043816.jpg",
+        "latency_ms": 59.716899995692074
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000044068.jpg",
+        "latency_ms": 60.0245000096038
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000044195.jpg",
+        "latency_ms": 59.05130004975945
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000044260.jpg",
+        "latency_ms": 58.58750001061708
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000044279.jpg",
+        "latency_ms": 58.24779998511076
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000044590.jpg",
+        "latency_ms": 59.2876001028344
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000044652.jpg",
+        "latency_ms": 63.12770000658929
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000044699.jpg",
+        "latency_ms": 101.57019994221628
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000044877.jpg",
+        "latency_ms": 61.13400007598102
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000045070.jpg",
+        "latency_ms": 59.4476000405848
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000045090.jpg",
+        "latency_ms": 75.37350000347942
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000045229.jpg",
+        "latency_ms": 67.67559994477779
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000045472.jpg",
+        "latency_ms": 60.687500052154064
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000045550.jpg",
+        "latency_ms": 59.275300009176135
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000045596.jpg",
+        "latency_ms": 59.940299950540066
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000045728.jpg",
+        "latency_ms": 57.953599956817925
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000046031.jpg",
+        "latency_ms": 58.45649994444102
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000046048.jpg",
+        "latency_ms": 60.385200078599155
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000046252.jpg",
+        "latency_ms": 59.92909998167306
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000046378.jpg",
+        "latency_ms": 57.65840003732592
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000046463.jpg",
+        "latency_ms": 59.13489998783916
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000046497.jpg",
+        "latency_ms": 80.33439994323999
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000046804.jpg",
+        "latency_ms": 68.35890002548695
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000046872.jpg",
+        "latency_ms": 64.49589994736016
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000047010.jpg",
+        "latency_ms": 57.563599897548556
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000047112.jpg",
+        "latency_ms": 57.21820006147027
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000047121.jpg",
+        "latency_ms": 56.30499997641891
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000047571.jpg",
+        "latency_ms": 58.06750000920147
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000047585.jpg",
+        "latency_ms": 56.39819998759776
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000047740.jpg",
+        "latency_ms": 54.39710000064224
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000047769.jpg",
+        "latency_ms": 54.10950002260506
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000047801.jpg",
+        "latency_ms": 54.90459990687668
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000047819.jpg",
+        "latency_ms": 54.686799994669855
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000047828.jpg",
+        "latency_ms": 53.80420002620667
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000048153.jpg",
+        "latency_ms": 54.166699992492795
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000048396.jpg",
+        "latency_ms": 57.37759999465197
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000048504.jpg",
+        "latency_ms": 60.829499969258904
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000048555.jpg",
+        "latency_ms": 61.79349997546524
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000048564.jpg",
+        "latency_ms": 62.06950009800494
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000048924.jpg",
+        "latency_ms": 64.4937000470236
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000049060.jpg",
+        "latency_ms": 87.59010001085699
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000049091.jpg",
+        "latency_ms": 61.86719995457679
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000049259.jpg",
+        "latency_ms": 59.490000014193356
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000049269.jpg",
+        "latency_ms": 64.21520002186298
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000049759.jpg",
+        "latency_ms": 64.02209994848818
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000049761.jpg",
+        "latency_ms": 60.694699990563095
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000049810.jpg",
+        "latency_ms": 72.64570007100701
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000050006.jpg",
+        "latency_ms": 59.65700000524521
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000050145.jpg",
+        "latency_ms": 59.74579998292029
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000050149.jpg",
+        "latency_ms": 62.348300009034574
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000050165.jpg",
+        "latency_ms": 59.59979991894215
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000050326.jpg",
+        "latency_ms": 60.6152000837028
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000050331.jpg",
+        "latency_ms": 60.86470000445843
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000050380.jpg",
+        "latency_ms": 60.9506000764668
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000050638.jpg",
+        "latency_ms": 64.19699999969453
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000050679.jpg",
+        "latency_ms": 60.03889988642186
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000050811.jpg",
+        "latency_ms": 64.20459994114935
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000050828.jpg",
+        "latency_ms": 76.94940001238137
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000050844.jpg",
+        "latency_ms": 66.63449993357062
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000050896.jpg",
+        "latency_ms": 76.5378000214696
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000050943.jpg",
+        "latency_ms": 88.20450003258884
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000051008.jpg",
+        "latency_ms": 78.85789999272674
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000051309.jpg",
+        "latency_ms": 82.20419997815043
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000051314.jpg",
+        "latency_ms": 89.33069999329746
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000051326.jpg",
+        "latency_ms": 77.64179992955178
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000051598.jpg",
+        "latency_ms": 68.00660002045333
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000051610.jpg",
+        "latency_ms": 59.96670003514737
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000051712.jpg",
+        "latency_ms": 59.68329997267574
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000051738.jpg",
+        "latency_ms": 70.58539998251945
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000051938.jpg",
+        "latency_ms": 73.4775000018999
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000051961.jpg",
+        "latency_ms": 70.60600002296269
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000051976.jpg",
+        "latency_ms": 63.12679999973625
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000052007.jpg",
+        "latency_ms": 61.31310004275292
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000052017.jpg",
+        "latency_ms": 65.75559999328107
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000052412.jpg",
+        "latency_ms": 65.30380004551262
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000052413.jpg",
+        "latency_ms": 57.99689993727952
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000052462.jpg",
+        "latency_ms": 58.05640004109591
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000052507.jpg",
+        "latency_ms": 61.93269998766482
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000052565.jpg",
+        "latency_ms": 61.60769995767623
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000052591.jpg",
+        "latency_ms": 67.51449999865144
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000052891.jpg",
+        "latency_ms": 62.19349999446422
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000052996.jpg",
+        "latency_ms": 66.68359995819628
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000053505.jpg",
+        "latency_ms": 64.33950003702193
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000053529.jpg",
+        "latency_ms": 59.93949994444847
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000053624.jpg",
+        "latency_ms": 60.148100019432604
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000053626.jpg",
+        "latency_ms": 57.86539998371154
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000053909.jpg",
+        "latency_ms": 58.61379997804761
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000053994.jpg",
+        "latency_ms": 58.01969999447465
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000054123.jpg",
+        "latency_ms": 69.37220005784184
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000054164.jpg",
+        "latency_ms": 95.60300002340227
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000054592.jpg",
+        "latency_ms": 80.91649995185435
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000054593.jpg",
+        "latency_ms": 74.98160004615784
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000054605.jpg",
+        "latency_ms": 87.53000001888722
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000054628.jpg",
+        "latency_ms": 81.13980002235621
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000054654.jpg",
+        "latency_ms": 70.43920003343374
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000054931.jpg",
+        "latency_ms": 80.39789996109903
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000054967.jpg",
+        "latency_ms": 67.51069996971637
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000055002.jpg",
+        "latency_ms": 72.48910004273057
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000055022.jpg",
+        "latency_ms": 92.63639990240335
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000055072.jpg",
+        "latency_ms": 66.78039999678731
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000055150.jpg",
+        "latency_ms": 65.48880005721003
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000055167.jpg",
+        "latency_ms": 68.01849999465048
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000055299.jpg",
+        "latency_ms": 71.21680001728237
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000055528.jpg",
+        "latency_ms": 72.52479996532202
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000055950.jpg",
+        "latency_ms": 68.31170001532882
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000056127.jpg",
+        "latency_ms": 100.78770003747195
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000056288.jpg",
+        "latency_ms": 84.48089996818453
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000056344.jpg",
+        "latency_ms": 63.073799945414066
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000056350.jpg",
+        "latency_ms": 113.29550005029887
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000056545.jpg",
+        "latency_ms": 79.41650005523115
+      }
+    ]
+  },
+  "int8": {
+    "model": "yolov8n_int8_openvino_model\\yolov8n.xml",
+    "summary": {
+      "mean_ms": 23.52729520155117,
+      "median_ms": 22.38944999407977,
+      "std_ms": 3.4330322200176586,
+      "min_ms": 20.638399990275502,
+      "max_ms": 48.48729993682355,
+      "p90_ms": 26.55124004231766,
+      "p95_ms": 28.851050074445077,
+      "p99_ms": 38.36240404518318,
+      "fps": 42.503823386126825,
+      "samples": 500
+    },
+    "per_image": [
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000000139.jpg",
+        "latency_ms": 22.73629989940673
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000000285.jpg",
+        "latency_ms": 23.361400002613664
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000000632.jpg",
+        "latency_ms": 21.194699918851256
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000000724.jpg",
+        "latency_ms": 20.74089995585382
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000000776.jpg",
+        "latency_ms": 20.928499987348914
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000000785.jpg",
+        "latency_ms": 20.692799938842654
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000000802.jpg",
+        "latency_ms": 20.732600009068847
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000000872.jpg",
+        "latency_ms": 21.019900101237
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000000885.jpg",
+        "latency_ms": 22.021299926564097
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000001000.jpg",
+        "latency_ms": 23.607100010849535
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000001268.jpg",
+        "latency_ms": 28.16649992018938
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000001296.jpg",
+        "latency_ms": 25.844700052402914
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000001353.jpg",
+        "latency_ms": 24.235000018961728
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000001425.jpg",
+        "latency_ms": 23.45969993621111
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000001490.jpg",
+        "latency_ms": 23.89660000335425
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000001503.jpg",
+        "latency_ms": 24.412699975073338
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000001532.jpg",
+        "latency_ms": 26.38460008893162
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000001584.jpg",
+        "latency_ms": 25.20530007313937
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000001675.jpg",
+        "latency_ms": 25.54599998984486
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000001761.jpg",
+        "latency_ms": 24.203100008890033
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000001818.jpg",
+        "latency_ms": 25.435799965634942
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000001993.jpg",
+        "latency_ms": 23.978799930773675
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000002006.jpg",
+        "latency_ms": 24.02760006953031
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000002149.jpg",
+        "latency_ms": 24.006800027564168
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000002153.jpg",
+        "latency_ms": 25.799599941819906
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000002157.jpg",
+        "latency_ms": 23.300700006075203
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000002261.jpg",
+        "latency_ms": 23.286900017410517
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000002299.jpg",
+        "latency_ms": 22.097300039604306
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000002431.jpg",
+        "latency_ms": 26.097299996763468
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000002473.jpg",
+        "latency_ms": 24.694599909707904
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000002532.jpg",
+        "latency_ms": 21.09829999972135
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000002587.jpg",
+        "latency_ms": 21.486699930392206
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000002592.jpg",
+        "latency_ms": 22.269700071774423
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000002685.jpg",
+        "latency_ms": 30.62650002539158
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000002923.jpg",
+        "latency_ms": 21.000599954277277
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000003156.jpg",
+        "latency_ms": 22.571699926629663
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000003255.jpg",
+        "latency_ms": 21.46140008699149
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000003501.jpg",
+        "latency_ms": 20.889800041913986
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000003553.jpg",
+        "latency_ms": 26.38620010111481
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000003661.jpg",
+        "latency_ms": 29.951800010167062
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000003845.jpg",
+        "latency_ms": 26.726200012490153
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000003934.jpg",
+        "latency_ms": 24.476599995978177
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000004134.jpg",
+        "latency_ms": 20.916500012390316
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000004395.jpg",
+        "latency_ms": 21.841299952939153
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000004495.jpg",
+        "latency_ms": 20.97630000207573
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000004765.jpg",
+        "latency_ms": 21.180200041271746
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000004795.jpg",
+        "latency_ms": 23.225400014780462
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000005001.jpg",
+        "latency_ms": 20.638399990275502
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000005037.jpg",
+        "latency_ms": 21.175700007006526
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000005060.jpg",
+        "latency_ms": 21.669000037945807
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000005193.jpg",
+        "latency_ms": 30.619899975135922
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000005477.jpg",
+        "latency_ms": 32.077300013042986
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000005503.jpg",
+        "latency_ms": 27.4660000577569
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000005529.jpg",
+        "latency_ms": 24.034000001847744
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000005586.jpg",
+        "latency_ms": 24.9868999235332
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000005600.jpg",
+        "latency_ms": 22.758000064641237
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000005992.jpg",
+        "latency_ms": 23.840300040319562
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000006012.jpg",
+        "latency_ms": 23.97540002129972
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000006040.jpg",
+        "latency_ms": 24.58999992813915
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000006213.jpg",
+        "latency_ms": 25.020499946549535
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000006460.jpg",
+        "latency_ms": 25.60370007995516
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000006471.jpg",
+        "latency_ms": 24.73099995404482
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000006614.jpg",
+        "latency_ms": 25.21260001230985
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000006723.jpg",
+        "latency_ms": 24.853099952451885
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000006763.jpg",
+        "latency_ms": 24.213399970903993
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000006771.jpg",
+        "latency_ms": 24.789100047200918
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000006818.jpg",
+        "latency_ms": 23.987699998542666
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000006894.jpg",
+        "latency_ms": 22.60789996944368
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000006954.jpg",
+        "latency_ms": 21.830599987879395
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000007088.jpg",
+        "latency_ms": 23.488900042138994
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000007108.jpg",
+        "latency_ms": 22.260199999436736
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000007278.jpg",
+        "latency_ms": 21.784700104035437
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000007281.jpg",
+        "latency_ms": 21.430199965834618
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000007386.jpg",
+        "latency_ms": 21.246000076644123
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000007511.jpg",
+        "latency_ms": 22.343399934470654
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000007574.jpg",
+        "latency_ms": 21.11000008881092
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000007784.jpg",
+        "latency_ms": 24.01249995455146
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000007795.jpg",
+        "latency_ms": 21.45200001541525
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000007816.jpg",
+        "latency_ms": 21.56500006094575
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000007818.jpg",
+        "latency_ms": 21.90539997536689
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000007888.jpg",
+        "latency_ms": 21.476799971424043
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000007977.jpg",
+        "latency_ms": 22.39149995148182
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000007991.jpg",
+        "latency_ms": 21.27130003646016
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000008021.jpg",
+        "latency_ms": 21.042100037448108
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000008211.jpg",
+        "latency_ms": 27.95190003234893
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000008277.jpg",
+        "latency_ms": 23.434999980963767
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000008532.jpg",
+        "latency_ms": 21.13390003796667
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000008629.jpg",
+        "latency_ms": 22.16759999282658
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000008690.jpg",
+        "latency_ms": 21.352300071157515
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000008762.jpg",
+        "latency_ms": 21.807400044053793
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000008844.jpg",
+        "latency_ms": 22.362699965015054
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000008899.jpg",
+        "latency_ms": 21.468200022354722
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000009378.jpg",
+        "latency_ms": 22.934700013138354
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000009400.jpg",
+        "latency_ms": 23.105100030079484
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000009448.jpg",
+        "latency_ms": 26.12659998703748
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000009483.jpg",
+        "latency_ms": 26.128800003789365
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000009590.jpg",
+        "latency_ms": 24.31610005442053
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000009769.jpg",
+        "latency_ms": 23.82150001358241
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000009772.jpg",
+        "latency_ms": 24.122999981045723
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000009891.jpg",
+        "latency_ms": 25.318800006061792
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000009914.jpg",
+        "latency_ms": 28.04110001306981
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000010092.jpg",
+        "latency_ms": 38.334600045345724
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000010363.jpg",
+        "latency_ms": 26.70559997204691
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000010583.jpg",
+        "latency_ms": 27.044399990700185
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000010707.jpg",
+        "latency_ms": 24.338699993677437
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000010764.jpg",
+        "latency_ms": 25.516900001093745
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000010977.jpg",
+        "latency_ms": 25.544599979184568
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000010995.jpg",
+        "latency_ms": 26.64809999987483
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000011051.jpg",
+        "latency_ms": 26.498999912291765
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000011122.jpg",
+        "latency_ms": 22.557699936442077
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000011149.jpg",
+        "latency_ms": 22.469500079751015
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000011197.jpg",
+        "latency_ms": 22.712399950250983
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000011511.jpg",
+        "latency_ms": 27.768000029027462
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000011615.jpg",
+        "latency_ms": 22.81990007031709
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000011699.jpg",
+        "latency_ms": 23.831999977119267
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000011760.jpg",
+        "latency_ms": 21.89510001335293
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000011813.jpg",
+        "latency_ms": 22.484600078314543
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000012062.jpg",
+        "latency_ms": 21.67419996112585
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000012120.jpg",
+        "latency_ms": 22.067600046284497
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000012280.jpg",
+        "latency_ms": 22.545300074853003
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000012576.jpg",
+        "latency_ms": 23.157899966463447
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000012639.jpg",
+        "latency_ms": 22.924399934709072
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000012667.jpg",
+        "latency_ms": 21.85220003593713
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000012670.jpg",
+        "latency_ms": 22.115100058726966
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000012748.jpg",
+        "latency_ms": 21.50819997768849
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000013004.jpg",
+        "latency_ms": 22.584900027140975
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000013177.jpg",
+        "latency_ms": 28.562100022099912
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000013201.jpg",
+        "latency_ms": 21.756800008006394
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000013291.jpg",
+        "latency_ms": 21.147900028154254
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000013348.jpg",
+        "latency_ms": 22.196699981577694
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000013546.jpg",
+        "latency_ms": 26.5978000825271
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000013597.jpg",
+        "latency_ms": 31.98630001861602
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000013659.jpg",
+        "latency_ms": 30.341600067913532
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000013729.jpg",
+        "latency_ms": 37.82239998690784
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000013774.jpg",
+        "latency_ms": 26.715500047430396
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000013923.jpg",
+        "latency_ms": 26.949899969622493
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000014007.jpg",
+        "latency_ms": 25.576299987733364
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000014038.jpg",
+        "latency_ms": 31.616399995982647
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000014226.jpg",
+        "latency_ms": 24.74160003475845
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000014380.jpg",
+        "latency_ms": 25.63340007327497
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000014439.jpg",
+        "latency_ms": 26.17659990210086
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000014473.jpg",
+        "latency_ms": 25.122899911366403
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000014831.jpg",
+        "latency_ms": 23.289899923838675
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000014888.jpg",
+        "latency_ms": 22.59609999600798
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000015079.jpg",
+        "latency_ms": 23.718399927020073
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000015254.jpg",
+        "latency_ms": 22.913800086826086
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000015272.jpg",
+        "latency_ms": 45.377800008282065
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000015278.jpg",
+        "latency_ms": 48.45110001042485
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000015335.jpg",
+        "latency_ms": 21.842399961315095
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000015338.jpg",
+        "latency_ms": 23.400799953378737
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000015440.jpg",
+        "latency_ms": 41.11500002909452
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000015497.jpg",
+        "latency_ms": 25.639900006353855
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000015517.jpg",
+        "latency_ms": 22.08820008672774
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000015597.jpg",
+        "latency_ms": 22.818699944764376
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000015660.jpg",
+        "latency_ms": 22.104700095951557
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000015746.jpg",
+        "latency_ms": 21.94110001437366
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000015751.jpg",
+        "latency_ms": 22.192499949596822
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000015956.jpg",
+        "latency_ms": 21.922500105574727
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000016010.jpg",
+        "latency_ms": 21.890099975280464
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000016228.jpg",
+        "latency_ms": 22.78839994687587
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000016249.jpg",
+        "latency_ms": 21.772900014184415
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000016439.jpg",
+        "latency_ms": 22.691600024700165
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000016451.jpg",
+        "latency_ms": 22.288299980573356
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000016502.jpg",
+        "latency_ms": 21.5187999419868
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000016598.jpg",
+        "latency_ms": 22.64049998484552
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000016958.jpg",
+        "latency_ms": 23.564500035718083
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000017029.jpg",
+        "latency_ms": 22.348899976350367
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000017031.jpg",
+        "latency_ms": 21.565300063230097
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000017115.jpg",
+        "latency_ms": 22.78819994535297
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000017178.jpg",
+        "latency_ms": 21.748100058175623
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000017182.jpg",
+        "latency_ms": 22.230600006878376
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000017207.jpg",
+        "latency_ms": 22.398200002498925
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000017379.jpg",
+        "latency_ms": 23.758600000292063
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000017436.jpg",
+        "latency_ms": 24.52630002517253
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000017627.jpg",
+        "latency_ms": 24.247399996966124
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000017714.jpg",
+        "latency_ms": 24.881500052288175
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000017899.jpg",
+        "latency_ms": 24.32029996998608
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000017905.jpg",
+        "latency_ms": 22.605899954214692
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000017959.jpg",
+        "latency_ms": 22.171200020238757
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000018150.jpg",
+        "latency_ms": 22.109300014562905
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000018193.jpg",
+        "latency_ms": 21.46259997971356
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000018380.jpg",
+        "latency_ms": 21.85230003669858
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000018491.jpg",
+        "latency_ms": 21.80589991621673
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000018519.jpg",
+        "latency_ms": 21.625699941068888
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000018575.jpg",
+        "latency_ms": 22.7483999915421
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000018737.jpg",
+        "latency_ms": 24.786700028926134
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000018770.jpg",
+        "latency_ms": 22.690200014039874
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000018833.jpg",
+        "latency_ms": 21.91719994880259
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000018837.jpg",
+        "latency_ms": 21.756700007244945
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000019042.jpg",
+        "latency_ms": 22.44200010318309
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000019109.jpg",
+        "latency_ms": 21.950299968011677
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000019221.jpg",
+        "latency_ms": 22.134499973617494
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000019402.jpg",
+        "latency_ms": 22.13940001092851
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000019432.jpg",
+        "latency_ms": 22.848199936561286
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000019742.jpg",
+        "latency_ms": 21.97629993315786
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000019786.jpg",
+        "latency_ms": 21.87409996986389
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000019924.jpg",
+        "latency_ms": 22.34529994893819
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000020059.jpg",
+        "latency_ms": 22.419300046749413
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000020107.jpg",
+        "latency_ms": 22.282899939455092
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000020247.jpg",
+        "latency_ms": 21.600899985060096
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000020333.jpg",
+        "latency_ms": 28.557000099681318
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000020553.jpg",
+        "latency_ms": 23.112300084903836
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000020571.jpg",
+        "latency_ms": 23.03309994749725
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000020992.jpg",
+        "latency_ms": 21.79630007594824
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000021167.jpg",
+        "latency_ms": 22.40030001848936
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000021465.jpg",
+        "latency_ms": 21.48770005442202
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000021503.jpg",
+        "latency_ms": 22.220499929971993
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000021604.jpg",
+        "latency_ms": 22.29960006661713
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000021839.jpg",
+        "latency_ms": 21.974500035867095
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000021879.jpg",
+        "latency_ms": 25.161099969409406
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000021903.jpg",
+        "latency_ms": 21.53359993826598
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000022192.jpg",
+        "latency_ms": 21.909600007347763
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000022371.jpg",
+        "latency_ms": 21.373199997469783
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000022396.jpg",
+        "latency_ms": 22.467599948868155
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000022479.jpg",
+        "latency_ms": 21.254600025713444
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000022589.jpg",
+        "latency_ms": 21.49379998445511
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000022623.jpg",
+        "latency_ms": 24.05379991978407
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000022705.jpg",
+        "latency_ms": 23.839999921619892
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000022755.jpg",
+        "latency_ms": 24.701200076378882
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000022892.jpg",
+        "latency_ms": 21.856500068679452
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000022935.jpg",
+        "latency_ms": 22.479799925349653
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000022969.jpg",
+        "latency_ms": 21.620400017127395
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000023023.jpg",
+        "latency_ms": 32.90450002532452
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000023034.jpg",
+        "latency_ms": 35.79150000587106
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000023126.jpg",
+        "latency_ms": 31.911500031128526
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000023230.jpg",
+        "latency_ms": 21.68139989953488
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000023272.jpg",
+        "latency_ms": 21.90119994338602
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000023359.jpg",
+        "latency_ms": 21.602799999527633
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000023666.jpg",
+        "latency_ms": 22.029499989002943
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000023751.jpg",
+        "latency_ms": 27.05109992530197
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000023781.jpg",
+        "latency_ms": 22.22979988437146
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000023899.jpg",
+        "latency_ms": 22.424399969168007
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000023937.jpg",
+        "latency_ms": 21.69990004040301
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000024021.jpg",
+        "latency_ms": 22.240900085307658
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000024027.jpg",
+        "latency_ms": 23.741899989545345
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000024144.jpg",
+        "latency_ms": 23.651600000448525
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000024243.jpg",
+        "latency_ms": 24.525500019080937
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000024567.jpg",
+        "latency_ms": 22.538599907420576
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000024610.jpg",
+        "latency_ms": 22.908899933099747
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000024919.jpg",
+        "latency_ms": 21.81810000911355
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000025057.jpg",
+        "latency_ms": 22.48449996113777
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000025096.jpg",
+        "latency_ms": 21.56050002668053
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000025139.jpg",
+        "latency_ms": 22.654300089925528
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000025181.jpg",
+        "latency_ms": 21.15869999397546
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000025228.jpg",
+        "latency_ms": 22.588000050745904
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000025386.jpg",
+        "latency_ms": 21.991999936290085
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000025393.jpg",
+        "latency_ms": 21.33659995160997
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000025394.jpg",
+        "latency_ms": 22.591400076635182
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000025424.jpg",
+        "latency_ms": 24.90580000448972
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000025560.jpg",
+        "latency_ms": 21.84309996664524
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000025593.jpg",
+        "latency_ms": 27.247100020758808
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000025603.jpg",
+        "latency_ms": 23.19859992712736
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000025986.jpg",
+        "latency_ms": 28.526400099508464
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000026204.jpg",
+        "latency_ms": 21.643599960952997
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000026465.jpg",
+        "latency_ms": 21.757100010290742
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000026564.jpg",
+        "latency_ms": 21.923599997535348
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000026690.jpg",
+        "latency_ms": 21.90250006970018
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000026926.jpg",
+        "latency_ms": 21.187499980442226
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000026941.jpg",
+        "latency_ms": 21.417500101961195
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000027186.jpg",
+        "latency_ms": 31.420000013895333
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000027620.jpg",
+        "latency_ms": 22.657099994830787
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000027696.jpg",
+        "latency_ms": 21.282900008372962
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000027768.jpg",
+        "latency_ms": 21.817500004544854
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000027932.jpg",
+        "latency_ms": 22.76359999086708
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000027972.jpg",
+        "latency_ms": 24.143600021488965
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000027982.jpg",
+        "latency_ms": 21.96009992621839
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000028285.jpg",
+        "latency_ms": 21.707499981857836
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000028449.jpg",
+        "latency_ms": 22.9352000169456
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000028452.jpg",
+        "latency_ms": 22.048800019547343
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000028809.jpg",
+        "latency_ms": 21.795700071379542
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000028993.jpg",
+        "latency_ms": 21.749499952420592
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000029187.jpg",
+        "latency_ms": 21.264500101096928
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000029393.jpg",
+        "latency_ms": 21.65690006222576
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000029397.jpg",
+        "latency_ms": 21.93070005159825
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000029596.jpg",
+        "latency_ms": 21.36180002707988
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000029640.jpg",
+        "latency_ms": 22.623100085183978
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000029675.jpg",
+        "latency_ms": 21.39259991236031
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000029984.jpg",
+        "latency_ms": 21.746499929577112
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000030213.jpg",
+        "latency_ms": 22.440899978391826
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000030494.jpg",
+        "latency_ms": 21.423800033517182
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000030504.jpg",
+        "latency_ms": 22.416400024667382
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000030675.jpg",
+        "latency_ms": 21.11890004016459
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000030785.jpg",
+        "latency_ms": 21.284400019794703
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000030828.jpg",
+        "latency_ms": 21.269700024276972
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000031050.jpg",
+        "latency_ms": 21.46690001245588
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000031093.jpg",
+        "latency_ms": 22.19899999909103
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000031118.jpg",
+        "latency_ms": 26.588500011712313
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000031217.jpg",
+        "latency_ms": 24.247099994681776
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000031248.jpg",
+        "latency_ms": 21.24010003171861
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000031269.jpg",
+        "latency_ms": 21.189399994909763
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000031296.jpg",
+        "latency_ms": 22.19740010332316
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000031322.jpg",
+        "latency_ms": 21.546400035731494
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000031620.jpg",
+        "latency_ms": 22.01090008020401
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000031735.jpg",
+        "latency_ms": 21.370099973864853
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000031749.jpg",
+        "latency_ms": 21.0195000981912
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000031817.jpg",
+        "latency_ms": 21.625999943353236
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000032038.jpg",
+        "latency_ms": 21.822899929247797
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000032081.jpg",
+        "latency_ms": 21.021799999289215
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000032285.jpg",
+        "latency_ms": 26.37989993672818
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000032334.jpg",
+        "latency_ms": 21.278299973346293
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000032570.jpg",
+        "latency_ms": 25.237500085495412
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000032610.jpg",
+        "latency_ms": 24.300599936395884
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000032735.jpg",
+        "latency_ms": 22.218399913981557
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000032811.jpg",
+        "latency_ms": 21.560599911026657
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000032817.jpg",
+        "latency_ms": 22.50419999472797
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000032861.jpg",
+        "latency_ms": 21.620200015604496
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000032887.jpg",
+        "latency_ms": 21.09629998449236
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000032901.jpg",
+        "latency_ms": 21.004600101150572
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000032941.jpg",
+        "latency_ms": 21.68029989115894
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000033005.jpg",
+        "latency_ms": 23.223299998790026
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000033104.jpg",
+        "latency_ms": 21.732999943196774
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000033109.jpg",
+        "latency_ms": 21.098500001244247
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000033114.jpg",
+        "latency_ms": 21.255800034850836
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000033221.jpg",
+        "latency_ms": 21.570999990217388
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000033368.jpg",
+        "latency_ms": 21.251400001347065
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000033638.jpg",
+        "latency_ms": 21.494499989785254
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000033707.jpg",
+        "latency_ms": 21.283900015987456
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000033759.jpg",
+        "latency_ms": 21.13959996495396
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000033854.jpg",
+        "latency_ms": 22.828200017102063
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000034071.jpg",
+        "latency_ms": 26.401699986308813
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000034139.jpg",
+        "latency_ms": 30.24699992965907
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000034205.jpg",
+        "latency_ms": 31.535400077700615
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000034257.jpg",
+        "latency_ms": 23.759500007145107
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000034417.jpg",
+        "latency_ms": 22.458999999798834
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000034452.jpg",
+        "latency_ms": 22.983399918302894
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000034760.jpg",
+        "latency_ms": 21.876799990423024
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000034873.jpg",
+        "latency_ms": 23.83029996417463
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000035062.jpg",
+        "latency_ms": 21.76189993042499
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000035197.jpg",
+        "latency_ms": 21.862200112082064
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000035279.jpg",
+        "latency_ms": 22.12350000627339
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000035326.jpg",
+        "latency_ms": 21.744899917393923
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000035682.jpg",
+        "latency_ms": 23.050400079227984
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000035770.jpg",
+        "latency_ms": 21.812699967995286
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000035963.jpg",
+        "latency_ms": 22.063400014303625
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000036494.jpg",
+        "latency_ms": 21.83900005184114
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000036539.jpg",
+        "latency_ms": 21.69799990952015
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000036660.jpg",
+        "latency_ms": 24.810299975797534
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000036678.jpg",
+        "latency_ms": 21.743100020103157
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000036844.jpg",
+        "latency_ms": 22.35610003117472
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000036861.jpg",
+        "latency_ms": 21.582100074738264
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000036936.jpg",
+        "latency_ms": 22.53059996291995
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000037670.jpg",
+        "latency_ms": 22.995200008153915
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000037689.jpg",
+        "latency_ms": 24.04619997832924
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000037740.jpg",
+        "latency_ms": 21.93189994432032
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000037751.jpg",
+        "latency_ms": 22.43930008262396
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000037777.jpg",
+        "latency_ms": 22.435800055973232
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000037988.jpg",
+        "latency_ms": 24.32329999282956
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000038048.jpg",
+        "latency_ms": 23.137700045481324
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000038070.jpg",
+        "latency_ms": 23.112399969249964
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000038118.jpg",
+        "latency_ms": 22.193999961018562
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000038210.jpg",
+        "latency_ms": 28.844500076957047
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000038576.jpg",
+        "latency_ms": 22.823299979791045
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000038678.jpg",
+        "latency_ms": 23.649699985980988
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000038825.jpg",
+        "latency_ms": 21.71259990427643
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000038829.jpg",
+        "latency_ms": 21.802400005981326
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000039405.jpg",
+        "latency_ms": 22.401300026103854
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000039477.jpg",
+        "latency_ms": 21.79879997856915
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000039480.jpg",
+        "latency_ms": 21.58229995984584
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000039484.jpg",
+        "latency_ms": 22.712400066666305
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000039551.jpg",
+        "latency_ms": 21.977300057187676
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000039670.jpg",
+        "latency_ms": 22.14559994172305
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000039769.jpg",
+        "latency_ms": 21.94390003569424
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000039785.jpg",
+        "latency_ms": 22.57240004837513
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000039914.jpg",
+        "latency_ms": 23.35889998357743
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000039951.jpg",
+        "latency_ms": 22.332899970933795
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000039956.jpg",
+        "latency_ms": 21.90229995176196
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000040036.jpg",
+        "latency_ms": 21.647299989126623
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000040083.jpg",
+        "latency_ms": 22.237000055611134
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000040471.jpg",
+        "latency_ms": 22.387400036677718
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000040757.jpg",
+        "latency_ms": 22.69519993569702
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000041488.jpg",
+        "latency_ms": 22.843999904580414
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000041633.jpg",
+        "latency_ms": 21.653899922966957
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000041635.jpg",
+        "latency_ms": 22.44660002179444
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000041872.jpg",
+        "latency_ms": 22.32909994199872
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000041888.jpg",
+        "latency_ms": 21.563799935393035
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000041990.jpg",
+        "latency_ms": 22.037900052964687
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000042070.jpg",
+        "latency_ms": 22.69250003155321
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000042102.jpg",
+        "latency_ms": 22.22100005019456
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000042178.jpg",
+        "latency_ms": 21.62239991594106
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000042276.jpg",
+        "latency_ms": 22.0048000337556
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000042296.jpg",
+        "latency_ms": 22.18140009790659
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000042528.jpg",
+        "latency_ms": 21.808799938298762
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000042563.jpg",
+        "latency_ms": 22.922400035895407
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000042628.jpg",
+        "latency_ms": 21.153900073841214
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000042888.jpg",
+        "latency_ms": 22.11589994840324
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000042889.jpg",
+        "latency_ms": 21.95149997714907
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000043314.jpg",
+        "latency_ms": 23.008299991488457
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000043435.jpg",
+        "latency_ms": 24.2552999407053
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000043581.jpg",
+        "latency_ms": 21.665699896402657
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000043737.jpg",
+        "latency_ms": 21.98839990887791
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000043816.jpg",
+        "latency_ms": 21.843999973498285
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000044068.jpg",
+        "latency_ms": 21.862900000996888
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000044195.jpg",
+        "latency_ms": 22.191900061443448
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000044260.jpg",
+        "latency_ms": 22.974299965426326
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000044279.jpg",
+        "latency_ms": 22.200900013558567
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000044590.jpg",
+        "latency_ms": 21.60920004826039
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000044652.jpg",
+        "latency_ms": 22.05959998536855
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000044699.jpg",
+        "latency_ms": 21.70849998947233
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000044877.jpg",
+        "latency_ms": 21.685600047931075
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000045070.jpg",
+        "latency_ms": 21.83569991029799
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000045090.jpg",
+        "latency_ms": 27.17140002641827
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000045229.jpg",
+        "latency_ms": 21.75610000267625
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000045472.jpg",
+        "latency_ms": 22.89809996727854
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000045550.jpg",
+        "latency_ms": 21.1366000585258
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000045596.jpg",
+        "latency_ms": 21.78259997162968
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000045728.jpg",
+        "latency_ms": 21.94100001361221
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000046031.jpg",
+        "latency_ms": 21.967400098219514
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000046048.jpg",
+        "latency_ms": 21.982999984174967
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000046252.jpg",
+        "latency_ms": 22.085800068452954
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000046378.jpg",
+        "latency_ms": 22.827700013294816
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000046463.jpg",
+        "latency_ms": 21.843599970452487
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000046497.jpg",
+        "latency_ms": 21.876399987377226
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000046804.jpg",
+        "latency_ms": 22.27590000256896
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000046872.jpg",
+        "latency_ms": 21.69039996806532
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000047010.jpg",
+        "latency_ms": 22.49670005403459
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000047112.jpg",
+        "latency_ms": 23.75920000486076
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000047121.jpg",
+        "latency_ms": 36.307499976828694
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000047571.jpg",
+        "latency_ms": 28.975500026717782
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000047585.jpg",
+        "latency_ms": 24.230499984696507
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000047740.jpg",
+        "latency_ms": 22.002800018526614
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000047769.jpg",
+        "latency_ms": 22.87169999908656
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000047801.jpg",
+        "latency_ms": 22.39759999793023
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000047819.jpg",
+        "latency_ms": 22.853699978441
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000047828.jpg",
+        "latency_ms": 22.96919992659241
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000048153.jpg",
+        "latency_ms": 22.577900090254843
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000048396.jpg",
+        "latency_ms": 21.755499998107553
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000048504.jpg",
+        "latency_ms": 22.29929994791746
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000048555.jpg",
+        "latency_ms": 22.448400035500526
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000048564.jpg",
+        "latency_ms": 21.756700007244945
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000048924.jpg",
+        "latency_ms": 22.322800010442734
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000049060.jpg",
+        "latency_ms": 21.882200031541288
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000049091.jpg",
+        "latency_ms": 24.209000053815544
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000049259.jpg",
+        "latency_ms": 21.839700057171285
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000049269.jpg",
+        "latency_ms": 21.802500006742775
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000049759.jpg",
+        "latency_ms": 21.957800025120378
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000049761.jpg",
+        "latency_ms": 27.361699962057173
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000049810.jpg",
+        "latency_ms": 21.900600055232644
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000050006.jpg",
+        "latency_ms": 21.861699991859496
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000050145.jpg",
+        "latency_ms": 21.85670007020235
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000050149.jpg",
+        "latency_ms": 21.5260999975726
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000050165.jpg",
+        "latency_ms": 21.654399926774204
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000050326.jpg",
+        "latency_ms": 21.904899971559644
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000050331.jpg",
+        "latency_ms": 21.075299941003323
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000050380.jpg",
+        "latency_ms": 21.47119992878288
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000050638.jpg",
+        "latency_ms": 21.50059991981834
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000050679.jpg",
+        "latency_ms": 22.632300038821995
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000050811.jpg",
+        "latency_ms": 24.86110001336783
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000050828.jpg",
+        "latency_ms": 24.70860001631081
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000050844.jpg",
+        "latency_ms": 25.212800013832748
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000050896.jpg",
+        "latency_ms": 25.132999988272786
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000050943.jpg",
+        "latency_ms": 33.088000025600195
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000051008.jpg",
+        "latency_ms": 27.400400023907423
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000051309.jpg",
+        "latency_ms": 26.242299936711788
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000051314.jpg",
+        "latency_ms": 27.030900004319847
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000051326.jpg",
+        "latency_ms": 25.144899962469935
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000051598.jpg",
+        "latency_ms": 25.614500045776367
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000051610.jpg",
+        "latency_ms": 25.152900023385882
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000051712.jpg",
+        "latency_ms": 25.44050000142306
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000051738.jpg",
+        "latency_ms": 27.04049996100366
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000051938.jpg",
+        "latency_ms": 26.46000008098781
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000051961.jpg",
+        "latency_ms": 26.18289995007217
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000051976.jpg",
+        "latency_ms": 26.99490007944405
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000052007.jpg",
+        "latency_ms": 25.182300014421344
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000052017.jpg",
+        "latency_ms": 26.512200012803078
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000052412.jpg",
+        "latency_ms": 26.278399978764355
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000052413.jpg",
+        "latency_ms": 22.84630003850907
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000052462.jpg",
+        "latency_ms": 23.730500019155443
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000052507.jpg",
+        "latency_ms": 25.197200011461973
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000052565.jpg",
+        "latency_ms": 25.450700079090893
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000052591.jpg",
+        "latency_ms": 24.89389991387725
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000052891.jpg",
+        "latency_ms": 22.694900049827993
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000052996.jpg",
+        "latency_ms": 22.623100085183978
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000053505.jpg",
+        "latency_ms": 23.875699960626662
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000053529.jpg",
+        "latency_ms": 22.337600006721914
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000053624.jpg",
+        "latency_ms": 21.694600000046194
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000053626.jpg",
+        "latency_ms": 21.900800056755543
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000053909.jpg",
+        "latency_ms": 26.547100045718253
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000053994.jpg",
+        "latency_ms": 48.48729993682355
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000054123.jpg",
+        "latency_ms": 36.72650002408773
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000054164.jpg",
+        "latency_ms": 45.24540004786104
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000054592.jpg",
+        "latency_ms": 32.13329997379333
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000054593.jpg",
+        "latency_ms": 22.576100076548755
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000054605.jpg",
+        "latency_ms": 21.765799960121512
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000054628.jpg",
+        "latency_ms": 21.87559998128563
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000054654.jpg",
+        "latency_ms": 22.087000077590346
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000054931.jpg",
+        "latency_ms": 22.67899992875755
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000054967.jpg",
+        "latency_ms": 22.667599958367646
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000055002.jpg",
+        "latency_ms": 22.10840000770986
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000055022.jpg",
+        "latency_ms": 22.890200023539364
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000055072.jpg",
+        "latency_ms": 21.74250001553446
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000055150.jpg",
+        "latency_ms": 22.275199997238815
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000055167.jpg",
+        "latency_ms": 21.992199937812984
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000055299.jpg",
+        "latency_ms": 21.602699998766184
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000055528.jpg",
+        "latency_ms": 21.641300059854984
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000055950.jpg",
+        "latency_ms": 21.727500017732382
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000056127.jpg",
+        "latency_ms": 21.79749996867031
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000056288.jpg",
+        "latency_ms": 21.81369997560978
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000056344.jpg",
+        "latency_ms": 21.647399989888072
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000056350.jpg",
+        "latency_ms": 21.735600079409778
+      },
+      {
+        "image": "research\\evaluation\\coco_val500\\images\\000000056545.jpg",
+        "latency_ms": 22.1603000536561
+      }
+    ]
+  },
+  "comparison": {
+    "mean_latency_reduction_percent": 65.69326407023213,
+    "p95_latency_reduction_percent": 71.3747487811738,
+    "p99_latency_reduction_percent": 72.34345722030572,
+    "mean_speedup": 2.9148794628762764,
+    "throughput_gain_percent": 191.48794628762766
+  }
+}

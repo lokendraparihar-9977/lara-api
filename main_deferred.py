@@ -1,7 +1,14 @@
 # LARA - Lightweight Adaptive Recognition API
 # main.py - Mark II + Supabase: Real database backend
 
-from fastapi import FastAPI, File, UploadFile, HTTPException, Header
+from fastapi import (
+    FastAPI,
+    File,
+    UploadFile,
+    HTTPException,
+    Header,
+    BackgroundTasks,
+)
 from PIL import Image
 from ultralytics import YOLO
 from supabase import create_client
@@ -222,6 +229,7 @@ def verify_payment(
 # ── Detection endpoint ─────────────────────────────────
 @app.post("/detect")
 async def detect(
+    background_tasks: BackgroundTasks,
     file: UploadFile = File(...),
     x_api_key: str = Header(...)
 ):
@@ -429,19 +437,16 @@ async def detect(
     ) * 1000.0
 
     # ---------------------------------------------------------
-    # Step 7 — Supabase usage logging
+    # Step 7 — Deferred Supabase usage logging
     # ---------------------------------------------------------
 
-    t0 = time.perf_counter()
+    database_log_ms = 0.0
 
-    log_usage(
+    background_tasks.add_task(
+        log_usage,
         x_api_key,
-        "/detect"
+        "/detect",
     )
-
-    database_log_ms = (
-        time.perf_counter() - t0
-    ) * 1000.0
 
     # ---------------------------------------------------------
     # Step 8 — Response construction
@@ -451,7 +456,8 @@ async def detect(
 
     response = {
         "status": "success",
-        "model": "lara-detect-v1",
+        "model": "lara-detect-v1-deferred-db",
+        "architecture": "deferred_database_logging",
         "image_size": [
             img.width,
             img.height
