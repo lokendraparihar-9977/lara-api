@@ -1,0 +1,265 @@
+{
+  "experiment": "E5",
+  "name": "Batch-size scaling: FP32 vs INT8 OpenVINO",
+  "image_directory": "D:\\LARA\\research\\evaluation\\coco_val500\\images",
+  "image_count_requested": 500,
+  "image_count_selected": 500,
+  "input_size": 640,
+  "warmup_iterations": 10,
+  "batch_sizes": [
+    1,
+    2,
+    4,
+    8
+  ],
+  "device": "CPU",
+  "performance_hint": "LATENCY",
+  "fp32_model": "D:\\LARA\\yolov8n_openvino_model\\yolov8n.xml",
+  "int8_model": "D:\\LARA\\yolov8n_int8_openvino_model\\yolov8n.xml",
+  "results": [
+    {
+      "batch_size": 1,
+      "fp32": {
+        "model": "FP32",
+        "model_path": "D:\\LARA\\yolov8n_openvino_model\\yolov8n.xml",
+        "batch_size": 1,
+        "images_measured": 500,
+        "batches_measured": 500,
+        "warmup_iterations": 10,
+        "input_size": 640,
+        "device": "CPU",
+        "performance_hint": "LATENCY",
+        "batch_latency_ms": {
+          "mean": 75.40935200219974,
+          "median": 70.24750002892688,
+          "p95": 112.6933200517669,
+          "p99": 141.95340603590012
+        },
+        "per_image_latency_ms": {
+          "mean": 75.40935200219974,
+          "median": 70.24750002892688,
+          "p95": 112.6933200517669,
+          "p99": 141.95340603590012
+        },
+        "throughput_fps": 13.257337150599351,
+        "batch_throughput": 13.257337150599351,
+        "benchmark_wall_time_s": 37.714964500046335
+      },
+      "int8": {
+        "model": "INT8",
+        "model_path": "D:\\LARA\\yolov8n_int8_openvino_model\\yolov8n.xml",
+        "batch_size": 1,
+        "images_measured": 500,
+        "batches_measured": 500,
+        "warmup_iterations": 10,
+        "input_size": 640,
+        "device": "CPU",
+        "performance_hint": "LATENCY",
+        "batch_latency_ms": {
+          "mean": 49.893259395845234,
+          "median": 37.554450042080134,
+          "p95": 96.55222009168935,
+          "p99": 214.15405102889045
+        },
+        "per_image_latency_ms": {
+          "mean": 49.893259395845234,
+          "median": 37.554450042080134,
+          "p95": 96.55222009168935,
+          "p99": 214.15405102889045
+        },
+        "throughput_fps": 20.03000968167082,
+        "batch_throughput": 20.03000968167082,
+        "benchmark_wall_time_s": 24.96254409989342
+      },
+      "comparison": {
+        "mean_per_image_latency_reduction_percent": 33.83677478837132,
+        "mean_per_image_speedup": 1.5114136241113025,
+        "p95_per_image_latency_reduction_percent": 14.323031704685746,
+        "throughput_gain_percent": 51.08622081595987
+      }
+    },
+    {
+      "batch_size": 2,
+      "fp32": {
+        "model": "FP32",
+        "model_path": "D:\\LARA\\yolov8n_openvino_model\\yolov8n.xml",
+        "batch_size": 2,
+        "images_measured": 500,
+        "batches_measured": 250,
+        "warmup_iterations": 10,
+        "input_size": 640,
+        "device": "CPU",
+        "performance_hint": "LATENCY",
+        "batch_latency_ms": {
+          "mean": 159.8107403991744,
+          "median": 143.68854998610914,
+          "p95": 255.88862504810078,
+          "p99": 343.33345895865926
+        },
+        "per_image_latency_ms": {
+          "mean": 79.9053701995872,
+          "median": 71.84427499305457,
+          "p95": 127.94431252405039,
+          "p99": 171.66672947932963
+        },
+        "throughput_fps": 12.512548678694856,
+        "batch_throughput": 6.256274339347428,
+        "benchmark_wall_time_s": 39.95988449989818
+      },
+      "int8": {
+        "model": "INT8",
+        "model_path": "D:\\LARA\\yolov8n_int8_openvino_model\\yolov8n.xml",
+        "batch_size": 2,
+        "images_measured": 500,
+        "batches_measured": 250,
+        "warmup_iterations": 10,
+        "input_size": 640,
+        "device": "CPU",
+        "performance_hint": "LATENCY",
+        "batch_latency_ms": {
+          "mean": 108.62368039228022,
+          "median": 90.50504997139797,
+          "p95": 204.92067000013776,
+          "p99": 351.5401560312601
+        },
+        "per_image_latency_ms": {
+          "mean": 54.31184019614011,
+          "median": 45.25252498569898,
+          "p95": 102.46033500006888,
+          "p99": 175.77007801563005
+        },
+        "throughput_fps": 18.394020024616644,
+        "batch_throughput": 9.197010012308322,
+        "benchmark_wall_time_s": 27.182747400016524
+      },
+      "comparison": {
+        "mean_per_image_latency_reduction_percent": 32.02979967368865,
+        "mean_per_image_speedup": 1.4712329744493908,
+        "p95_per_image_latency_reduction_percent": 19.918022943920345,
+        "throughput_gain_percent": 47.00458313449907
+      }
+    },
+    {
+      "batch_size": 4,
+      "fp32": {
+        "model": "FP32",
+        "model_path": "D:\\LARA\\yolov8n_openvino_model\\yolov8n.xml",
+        "batch_size": 4,
+        "images_measured": 500,
+        "batches_measured": 125,
+        "warmup_iterations": 10,
+        "input_size": 640,
+        "device": "CPU",
+        "performance_hint": "LATENCY",
+        "batch_latency_ms": {
+          "mean": 331.3178920065984,
+          "median": 313.640300068073,
+          "p95": 479.11372003145516,
+          "p99": 528.5242400271819
+        },
+        "per_image_latency_ms": {
+          "mean": 82.8294730016496,
+          "median": 78.41007501701824,
+          "p95": 119.77843000786379,
+          "p99": 132.13106000679548
+        },
+        "throughput_fps": 12.071873685720554,
+        "batch_throughput": 3.0179684214301385,
+        "benchmark_wall_time_s": 41.41859110002406
+      },
+      "int8": {
+        "model": "INT8",
+        "model_path": "D:\\LARA\\yolov8n_int8_openvino_model\\yolov8n.xml",
+        "batch_size": 4,
+        "images_measured": 500,
+        "batches_measured": 125,
+        "warmup_iterations": 10,
+        "input_size": 640,
+        "device": "CPU",
+        "performance_hint": "LATENCY",
+        "batch_latency_ms": {
+          "mean": 228.4728048015386,
+          "median": 182.21430003177375,
+          "p95": 376.4714399119838,
+          "p99": 1229.0048720361692
+        },
+        "per_image_latency_ms": {
+          "mean": 57.11820120038465,
+          "median": 45.55357500794344,
+          "p95": 94.11785997799595,
+          "p99": 307.2512180090423
+        },
+        "throughput_fps": 17.504128042256824,
+        "batch_throughput": 4.376032010564206,
+        "benchmark_wall_time_s": 28.564690500032157
+      },
+      "comparison": {
+        "mean_per_image_latency_reduction_percent": 31.041211382273193,
+        "mean_per_image_speedup": 1.4501414831161001,
+        "p95_per_image_latency_reduction_percent": 21.42336481466918,
+        "throughput_gain_percent": 44.99926438894001
+      }
+    },
+    {
+      "batch_size": 8,
+      "fp32": {
+        "model": "FP32",
+        "model_path": "D:\\LARA\\yolov8n_openvino_model\\yolov8n.xml",
+        "batch_size": 8,
+        "images_measured": 496,
+        "batches_measured": 62,
+        "warmup_iterations": 10,
+        "input_size": 640,
+        "device": "CPU",
+        "performance_hint": "LATENCY",
+        "batch_latency_ms": {
+          "mean": 900.2928645143496,
+          "median": 839.7834000061266,
+          "p95": 1513.2658899994567,
+          "p99": 1657.8240549727343
+        },
+        "per_image_latency_ms": {
+          "mean": 112.5366080642937,
+          "median": 104.97292500076583,
+          "p95": 189.1582362499321,
+          "p99": 207.2280068715918
+        },
+        "throughput_fps": 8.884982299106268,
+        "batch_throughput": 1.1106227873882835,
+        "benchmark_wall_time_s": 55.824534400017
+      },
+      "int8": {
+        "model": "INT8",
+        "model_path": "D:\\LARA\\yolov8n_int8_openvino_model\\yolov8n.xml",
+        "batch_size": 8,
+        "images_measured": 496,
+        "batches_measured": 62,
+        "warmup_iterations": 10,
+        "input_size": 640,
+        "device": "CPU",
+        "performance_hint": "LATENCY",
+        "batch_latency_ms": {
+          "mean": 359.60103387215867,
+          "median": 332.892449980136,
+          "p95": 600.9908299893137,
+          "p99": 786.2849370599725
+        },
+        "per_image_latency_ms": {
+          "mean": 44.95012923401983,
+          "median": 41.611556247517,
+          "p95": 75.12385374866422,
+          "p99": 98.28561713249657
+        },
+        "throughput_fps": 22.24214378894301,
+        "batch_throughput": 2.7802679736178764,
+        "benchmark_wall_time_s": 22.300008699996397
+      },
+      "comparison": {
+        "mean_per_image_latency_reduction_percent": 60.05732711586687,
+        "mean_per_image_speedup": 2.503588087108814,
+        "p95_per_image_latency_reduction_percent": 60.285179626329274,
+        "throughput_gain_percent": 150.33413731370436
+      }
+    }
+  ]
+}

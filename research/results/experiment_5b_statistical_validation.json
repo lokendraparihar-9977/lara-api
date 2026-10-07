@@ -1,0 +1,56 @@
+{
+  "experiment": "5B",
+  "comparison": {
+    "baseline_file": "research\\results\\api_decomposition_baseline_final50.csv",
+    "deferred_file": "research\\results\\api_decomposition_deferred_50_v2.csv",
+    "baseline_n": 50,
+    "deferred_n": 50,
+    "metric": "total_server_ms"
+  },
+  "descriptive_statistics": {
+    "baseline": {
+      "mean_ms": 405.51936000000006,
+      "median_ms": 404.539,
+      "std_ms": 167.15877193679898,
+      "min_ms": 201.472,
+      "max_ms": 1337.988
+    },
+    "deferred": {
+      "mean_ms": 246.12028,
+      "median_ms": 240.572,
+      "std_ms": 22.31164529379038,
+      "min_ms": 219.949,
+      "max_ms": 317.656
+    }
+  },
+  "latency_reduction": {
+    "mean_difference_ms": 159.39908000000005,
+    "mean_reduction_percent": 39.30739089744076,
+    "median_reduction_percent": 40.531815226714855
+  },
+  "bootstrap": {
+    "mean_difference_ms": 159.39908000000005,
+    "ci_95_lower_ms": 118.47979199999999,
+    "ci_95_upper_ms": 209.85947649999994,
+    "iterations": 20000,
+    "seed": 42
+  },
+  "statistical_tests": {
+    "welch_t_test": {
+      "statistic": 6.68354768250959,
+      "p_value": 1.7589974788697493e-08
+    },
+    "mann_whitney_u": {
+      "statistic": 2244.0,
+      "p_value": 7.43627753267888e-12
+    },
+    "kolmogorov_smirnov": {
+      "statistic": 0.78,
+      "p_value": 2.807570962237254e-15
+    }
+  },
+  "effect_sizes": {
+    "cohens_d": 1.3367095365019181,
+    "cliffs_delta": 0.7952
+  }
+}

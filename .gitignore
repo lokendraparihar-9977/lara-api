@@ -1,6 +1,51 @@
+# Environment / secrets
 .env
-yolov8n.pt
+
+# Python
 __pycache__/
 *.pyc
-usage_log.json
 .ipynb_checkpoints/
+
+# Local application data
+usage_log.json
+
+# Model weights / exported models
+*.pt
+*.onnx
+*.xml
+*.bin
+
+# Local datasets and generated training/evaluation artifacts
+datasets/
+runs/
+research/evaluation/coco_val500/images/
+research/evaluation/coco_val500/labels/
+research/evaluation/coco_val500/labels.cache
+
+# Temporary / diagnostic files
+kernel.errors.txt
+
+# Intermediate research results
+research/results/api_benchmark_val500.csv
+research/results/api_decomposition.csv
+research/results/api_decomposition_50.csv
+research/results/api_decomposition_baseline_final50.csv
+research/results/api_decomposition_deferred_50_v2.csv
+research/results/api_decomposition_deferred_check20.csv
+research/results/api_decomposition_deferred_debug10.csv
+research/results/api_decomposition_deferred_final50.csv
+research/results/api_decomposition_sync_final50.csv
+research/results/baseline_multimage.csv
+research/results/baseline_v1.txt
+research/results/db_latency_50.csv
+research/results/resource_comparison_val500.csv
+research/results/runtime_comparison.csv
+research/results/runtime_comparison_val500.csv
+research/test_images/
+
+# Generated OpenVINO model directories
+yolov8n_openvino_model/
+yolov8n_int8_openvino_model/
+
+# Temporary repository inspection files
+status.txt
