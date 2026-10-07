@@ -1,4 +1,4 @@
-path: D:/LARA/research/evaluation/coco_val500
+path: .
 train: images
 val: images
 
